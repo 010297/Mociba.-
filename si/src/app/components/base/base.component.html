@@ -1,0 +1,13 @@
+
+
+<div class="row">
+  <div style="display: block">
+    <canvas baseChart *ngIf="pieChartData.length>0"
+            width="250" height="90"
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+            (chartHover)="chartHovered($event)">
+    </canvas>
+  </div>
+</div>

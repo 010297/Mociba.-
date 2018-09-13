@@ -1,0 +1,272 @@
+
+*{
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+body{
+  font-family: 'Verdana',sans-serif;
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:'Open Sans',sans-serif;
+  letter-spacing: 1.2px;
+}
+
+/*---------------HEADER-------------------*/
+
+.header{
+  height: 60px;
+  color: #fff;
+  font-size: 10px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo,  #btn-menu{
+  margin: 5px;
+}
+
+.logo{
+  font-size: 26px;
+}
+
+#btn-menu{
+  display: block;
+  width: 45px;
+  height: 35px;
+  font-size:30px;
+  background-color: #fba919;
+  text-align:top;
+  line-height: 3px;
+  border-radius:5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.container{
+  margin: auto;
+  width: 98%;
+}
+
+/*--------------- MENU STYLES -------------------*/
+
+.nav{
+  position: absolute;
+  top: 70px;
+  left: -100%;
+  width: 60%;
+  transition: all 0.6s;
+  border-radius:5px;
+
+
+}
+
+.menu{
+  list-style: none;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__link{
+  display:block;
+  padding: 17px;
+  background: #FBA919;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu__link:hover, .select{
+  background: white;
+  color: #FBA919;
+}
+
+.mostrar{
+  left:0;
+}
+
+/*-------Banner styles------------*/
+
+.banner{
+  margin-top: -60px;
+  position: relative;
+  z-index: -1000;
+  margin-bottom: 30px;
+}
+
+.banner__titulo{
+  font-size: 22px;
+}
+
+.banner__descrip{
+  display: none;
+}
+
+#bContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-40%);
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+
+/*--------INFO STYLES-------*/
+.info__col{
+  background:#a55eea;
+  color:white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+}
+
+.info__img{
+  width: 100px;
+  height:95px;
+  border-radius: 3px;
+}
+
+.info_title{
+  font-size: 18px;
+}
+
+.info__descrip{
+  font-size: 11px;
+}
+
+/*----------footer-------*/
+
+.footer{
+  background-color: grey;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+[class^="icon-"]{
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 40px;
+  padding: 3px;
+}
+
+
+
+/*---------RESPONSIVE STYLES---------*/
+
+@media(min-width:480px){
+  .logo{
+    font-size:40px;
+  }
+
+  .banner__titulo{
+    margin: 10px 0;
+    font-size:30px;
+  }
+
+  .banner__descrip{
+    display: block;
+    font-size: 22px;
+    margin: 7px 0;
+  }
+
+  .info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -85px;
+    transition: 0.8;
+  }
+
+  .info_title{
+    font-size: 25px;
+  }
+
+  .info__descrip{
+    font-size: 14px;
+  }
+
+  .info__col{
+    width: 32%;
+  }
+
+  .info__img{
+    width: 120px;
+    height:120px;
+  }
+
+  @media(min-width: 1024px){
+    .container{
+      width: 1000px;
+    }
+
+    .nav{
+      position: static;
+      width: auto;
+    }
+
+    .menu{
+      display:flex;
+    }
+
+    #btn-menu{
+      display: none;
+    }
+
+    .menu__link{
+      background: #910a0a3f;
+      font-size: 15px;
+    }
+
+    .select{
+      background: white;
+    }
+
+    .banner__titulo{
+      font-size: 38px;
+    }
+
+    .banner__descrip{
+      font-size:30px;
+    }
+
+  .info__img{
+    width: 140px;
+    height:135px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  }
+
+  /*------------- CONTAINER GRAPHS STYLE-----------*/
+
+  .container-navbar{
+    background-color:#d86c07ee;
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+    margin-right:20px;
+  }
+
+  h4{
+    color: grey;
+  }
+
+  .info__descrip{
+    text-align: justify;
+  }
+
+}
