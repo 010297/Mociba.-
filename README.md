@@ -36,5 +36,5 @@ NGROK nos permite realizar esto  sin hacer ninguna configuración extra en el ro
 
 <hr><h3>Acerca del proyecto</h3>
 <p>
-<b>Autor:</b> Vega Castro Jesús Samuel. <b>Correo electrónico: </b>jesaveca@gmail.com< <b>Tel:</b> 272 189 64 89. /p>
+<b>Autor:</b> Vega Castro Jesús Samuel. <b>Correo electrónico: </b>jesaveca@gmail.com <b>Tel:</b> 272 189 64 89. </p>
 <p>Esta aplicación se encuentra bajo derechos de autor. Las herramientas empleadas se utilizaron sin fines de lucro.</p>
