@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MOCIBA</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+</body>
+
+<header class="header">
+  <div class="container">
+    <h1 class="logo"><b>MOCIBA</b></h1>
+    <button class="btn btn-warning" id="btn-menu">=</button>
+    <!--<img src="assets/lineas-de-menu (3).png" id="icon-menu">-->
+    <nav class="nav" id="nav">
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link select" href="#home">Principal</a></li>
+        <li class="menu__item"><a class="menu__link" href="#info">Información</a></li>
+        <li class="menu__item"><a class="menu__link" href="#graphs">Gráficas</a></li>
+        <li class="menu__item"><a class="menu__link" href="#about">Acerca de</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="banner" id="home">
+  <img src="assets/portada.jpg" alt="" class="banner__img">
+  <div class="container" id="bContainer">
+    <h2 class="banner__titulo"><b>Módulo sobre ciberacoso.</b></h2>
+    <p class="banner__descrip"><b>MOCIBA 2015. Resultados</b></p>
+  </div>
+</div>
+
+<main class="main" id="info">
+  <div class="container">
+    <section class="info">
+
+      <article class="info__col">
+        <img src="assets/info1.png" alt="" class="info__img">
+        <h2 class="info_title">¿Qué es MOCIBA?</h2>
+        <p class="info__descrip"> El Instituto Nacional de estadística y Geografía (INEGI) realiza por primera vez el levantamiento del
+          <strong>Módulo sobre Ciberacoso</strong>, el cuál es un censo en que se aborda un tema emergente como lo es el acoso por medios electrónicos,
+          el cuál es una forma de victimización cuyo estudio ha adquirido relevancia a partir del uso intensificado de Internet, telefonía móvil y TIC's en general.
+          <br>
+          <li>El tamaño de la muestra fué de 90,024 viviendas, donde se fijó un máximo de 4000 viviendas
+            por entidad.</li><br>
+            <li>El muestreo es probabilístico, estratificado y por conglomerados.</li>
+          </p>
+      </article>
+
+      <article class="info__col">
+        <img src="assets/info2.png" alt="" class="info__img">
+        <h2 class="info_title">Su origen</h2>
+        <p class="info__descrip">En la actualidad, todas las facetas de la vida en el ambito empresarial, cultural o de ocio
+          dependen de las TIC, esto ante la necesidad de estar comunicados entre distintas partes de territorio nacional
+          e internacional. <br><br>
+      Paralelamente, han ido surgiendo nuevos tipos de acoso a nivel mundial,
+      ya que se trata de una nueva forma de violencia que se investiga por parte de diversos gobiernos o instituciones debido al número de casos reportados
+      y por la repercusión que tiene en la vida de las personas dentro de la sociedad y su consecuencia de los daños y prejuicios que provoca
+      en distintos aspectos de la salud mental y física de las personas.</p>
+
+
+      </article>
+
+      <article class="info__col">
+        <img src="assets/info3.jpg" alt="" class="info__img">
+        <h2 class="info_title">Ciberacoso</h2>
+        <p class="info__descrip">El Ciberacoso supone una intromisión de una naturaleza repertitiva en la vida íntima de una persona,
+          utilizando para ello medios electrónicos, fundamentalmente Internet y telefonos celulares.<br><br>
+          Se presenta de forma encubierta porque las víctimas son atacadas a través de redes sociales o de las TIC sin otro
+          objetivo que inflingir maltratos y denigraciones.
+        </p>
+      </article>
+    </section>
+
+    <div id="graphs">
+      <app-root></app-root>
+    </div>
+
+  </div>
+
+</main>
+
+<br>
+
+<footer class="footer" id="about">
+  <p><b>Desarrollador:</b> Vega Castro Jesús Samuel <b>|</b> 272 189 64 89 <b>|</b> Orizaba, Ver.</p>
+  <div class="social">
+     <table class="social_table" style="text-align:center">
+      <div class="row">
+          <div class="col-md-4" id="social">
+          </div>
+
+          <div class="col-md-4" id="social">
+              <a href="https://www.facebook.com/jesussamuel02"><img class="icon-fb" src="assets/facebook (2).png"></a>
+              <a href="https://www.instagram.com/samuelvc02/"><img class="icon-gmail" src="assets/instagram (1).png"></a>
+              <a href="https://mail.google.com/mail/u/0/#inbox"><img class="icon-gmail" src="assets/gmail (3).png"></a>
+          </div>
+
+          <div class="col-md-4" id="social"></div>
+        </div>
+
+        </table>
+  </div>
+  <p clas="copy">&copy; MOCIBA 2015 - Todos los derechos reservados. </p>
+</footer>
+
+<script src="menu.js"></script>
+ </body>
+
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#btn-menu').click(function(){
+          nav.classList.toggle('mostrar');
+        });
+  });</script>
